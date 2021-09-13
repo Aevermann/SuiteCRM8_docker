@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
-LABEL org.opencontainers.image.authors="jon@titmus.me"
+LABEL org.opencontainers.image.authors="jmus.me"on@tit
 
-ENV TZ=Europe/London
+ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update
